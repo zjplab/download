@@ -63,6 +63,7 @@ parsers:
                 proxy[index].url="phncdn.com"
                 proxy[index].interval=1
                 proxy[index].tolerance=50
+                proxy[index].proxies=proxies
                 break;
             }
             if(proxy[index].hasOwnProperty("interval")) proxy[index].interval=1
