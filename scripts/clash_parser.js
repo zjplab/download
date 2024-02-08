@@ -4,7 +4,7 @@ parsers:
       code: |
         module.exports.parse = (raw, { yaml, console }) => {
         const rawObj = yaml.parse(raw)
-        let { 'proxies':proxies=[], 'rules': rules = [], 'proxy-groups': proxy = []} = rawObj
+        let { proxies=[], rules = [], 'proxy-groups': proxy = []} = rawObj
   
         //rules to modify
         const rulesMap={
