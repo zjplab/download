@@ -63,7 +63,8 @@ parsers:
                 proxy[index].url="phncdn.com"
                 proxy[index].interval=1
                 proxy[index].tolerance=50
-                proxy[index].proxies=proxies
+                // Create a new array with just the names of the proxies
+                proxy[index].proxies = proxies.map(proxy => proxy.name);
                 break;
             }
             if(proxy[index].hasOwnProperty("interval")) proxy[index].interval=1
