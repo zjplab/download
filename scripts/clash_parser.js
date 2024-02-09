@@ -50,7 +50,8 @@ parsers:
                 proxy_group[index].url="sharepoint.com"
                 proxy_group[index].interval=1
                 proxy_group[index].tolerance=50
-                proxy_group[index].proxies=proxy_group[index].proxies.concat(real_proxies_names)
+                // proxy_group[index].proxies=proxy_group[index].proxies.concat(real_proxies_names)
+                proxy_group[index].proxies=proxies.map(proxy => proxy.name);
                 break;
               case "🎵 Spotify":
                 proxy_group[index].type="url-test"
